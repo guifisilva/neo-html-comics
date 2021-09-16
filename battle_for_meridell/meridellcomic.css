@@ -6,6 +6,7 @@ body {
 	max-width: 100%;
 	background-color: #000000;
 }
+/* Fits everything to a container, following the original aspect ratio (550x1600) */
 .wrapper {
 	margin: auto;
 	transition: 1s;
@@ -14,7 +15,6 @@ body {
 	width: 68.75vh;
 	height: 100vh;
 }
-
 .fullWidth {
 	width: 100%;
 	height: 145.454545vw;
@@ -34,23 +34,16 @@ body {
 	background-position: center center;
 	background-size: contain;
 }
-.comicText, .comicFrame {
+.comicFrame, .comicText {
 	height: 100%;
 	width: 100%;
-}
-.comicFrame, .comicText {
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 }
-.activeArea {
-	position: absolute;
-	opacity: 0;
-	background-color: red;
-	z-index: 1000;
-}
+/* Comic gets darker with point hover */
 .blackLayer {
 	background-color: #000000;
 	height: 100%;
@@ -69,6 +62,13 @@ body {
 	transition: 0.5s;
 	transition-delay: 0.2s
 }
+/* Invisible divs that activate :hover functions */
+.activeArea {
+	position: absolute;
+	opacity: 0;
+	background-color: red;
+	z-index: 1000;
+}
 .activated1, .activated2, .activated3, .activated4, .activated5, .activated6, .activated7, .activated8 {
 	opacity: 0;
 }
@@ -81,55 +81,4 @@ body {
 }
 .comicFrame {
 	transition: 0.3s;
-}
-#page09 {
-	background-image: url(page09_full.png);
-}
-.page09f01 {
-	background-image: url(page09_01.png);
-}
-.page09f02 {
-	background-image: url(page09_02.png);
-}
-.page09f03 {
-	background-image: url(page09_03.png);
-}
-.page09f04 {
-	background-image: url(page09_04.png);
-}
-.page09f05 {
-	background-image: url(page09_05.png);
-}
-.page09f06 {
-	background-image: url(page09_06.png);
-}
-.page09f07 {
-	background-image: url(page09_07.png);
-}
-.page09f08 {
-	background-image: url(page09_08.png);
-}
-.page09t01 {
-	background-image: url(page09_01t.png);
-}
-.page09t02 {
-	background-image: url(page09_02t.png);
-}
-.page09t03 {
-	background-image: url(page09_03t.png);
-}
-.page09t04 {
-	background-image: url(page09_04t.png);
-}
-.page09t05 {
-	background-image: url(page09_05t.png);
-}
-.page09t06 {
-	background-image: url(page09_06t.png);
-}
-.page09t07 {
-	background-image: url(page09_07t.png);
-}
-.page09t08 {
-	background-image: url(page09_08t.png);
 }

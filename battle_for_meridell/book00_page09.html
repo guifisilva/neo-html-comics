@@ -4,6 +4,59 @@
 <meta charset="utf-8">
 <title>Battle for Meridell</title>
 <link href="meridellcomic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#page09 {
+	background-image: url(book00_page09/book00_page09_full.png)
+}
+.page09f01 {
+	background-image: url(book00_page09/book00_page09_01.png);
+}
+.page09f02 {
+	background-image: url(book00_page09/book00_page09_02.png);
+}
+.page09f03 {
+	background-image: url(book00_page09/book00_page09_03.png);
+}
+.page09f04 {
+	background-image: url(book00_page09/book00_page09_04.png);
+}
+.page09f05 {
+	background-image: url(book00_page09/book00_page09_05.png);
+}
+.page09f06 {
+	background-image: url(book00_page09/book00_page09_06.png);
+}
+.page09f07 {
+	background-image: url(book00_page09/book00_page09_07.png);
+}
+.page09f08 {
+	background-image: url(book00_page09/book00_page09_08.png);
+}
+.page09t01 {
+	background-image: url(book00_page09/book00_page09_01t.png);
+}
+.page09t02 {
+	background-image: url(book00_page09/book00_page09_02t.png);
+}
+.page09t03 {
+	background-image: url(book00_page09/book00_page09_03t.png);
+}
+.page09t04 {
+	background-image: url(book00_page09/book00_page09_04t.png);
+}
+.page09t05 {
+	background-image: url(book00_page09/book00_page09_05t.png);
+}
+.page09t06 {
+	background-image: url(book00_page09/book00_page09_06t.png);
+}
+.page09t07 {
+	background-image: url(book00_page09/book00_page09_07t.png);
+}
+.page09t08 {
+	background-image: url(book00_page09/book00_page09_08t.png);
+}
+</style>
 </head>
 <body>
 <div class="wrapper defaultWidth">
@@ -35,22 +88,7 @@
     <div class="comicText page09t08 activated8"></div>
   </div>
 </div>
-<script>
-var targetToggle = document.querySelector('.wrapper')
-targetToggle.onclick = function(){
-	if (targetToggle.classList.contains('defaultWidth')) {
-		targetToggle.classList.toggle('defaultWidth');
-		targetToggle.classList.toggle('trueSize');
-	}
-	else if (targetToggle.classList.contains('trueSize')) {
-		targetToggle.classList.toggle('trueSize');
-		targetToggle.classList.toggle('fullWidth');
-	}
-	else if (targetToggle.classList.contains('fullWidth')) {
-		targetToggle.classList.toggle('fullWidth');
-		targetToggle.classList.toggle('defaultWidth');
-	}
-}
+<script src="meridellcomic.js" type="text/javascript">
 </script>
 </body>
 </html>
