@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Battle for Meridell</title>
+<link href="meridellcomic.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper defaultWidth">
+  <div id="page09" class="pageContain">
+    <div class="blackLayer"></div>
+    <div class="activeArea active2" style="top: 11%; left: 1%; right: 50.5%; bottom: 61.5%;"></div>
+    <div class="activeArea active3" style="top: 11%; left: 50.5%; right: 1%; bottom: 61.5%;"></div>
+    <div class="activeArea active1" style="top: 1%; left: 25%; right: 25%; bottom: 82%;"></div>
+    <div class="activeArea active4" style="top: 38.5%; left: 1%; right: 50.5%; bottom: 32%;"></div>
+    <div class="activeArea active5" style="top: 38.5%; left: 50.5%; right: 1%; bottom: 32%;"></div>
+    <div class="activeArea active7" style="top: 68%; left: 1%; right: 50.5%; bottom: 1%;"></div>
+    <div class="activeArea active8" style="top: 68%; left: 50.5%; right: 1%; bottom: 1%;"></div>
+    <div class="activeArea active6" style="top: 59.5%; left: 25%; right: 25%; bottom: 21.5%;"></div>
+    <div class="comicFrame page09f01 activated1"> </div>
+    <div class="comicFrame page09f02 activated2"> </div>
+    <div class="comicFrame page09f03 activated3"> </div>
+    <div class="comicFrame page09f04 activated4"> </div>
+    <div class="comicFrame page09f05 activated5"> </div>
+    <div class="comicFrame page09f06 activated6"> </div>
+    <div class="comicFrame page09f07 activated7"> </div>
+    <div class="comicFrame page09f08 activated8"> </div>
+    <div class="comicText page09t01 activated1"></div>
+    <div class="comicText page09t02 activated2"></div>
+    <div class="comicText page09t03 activated3"></div>
+    <div class="comicText page09t04 activated4"></div>
+    <div class="comicText page09t05 activated5"></div>
+    <div class="comicText page09t06 activated6"></div>
+    <div class="comicText page09t07 activated7"></div>
+    <div class="comicText page09t08 activated8"></div>
+  </div>
+</div>
+<script>
+var targetToggle = document.querySelector('.wrapper')
+targetToggle.onclick = function(){
+	if (targetToggle.classList.contains('defaultWidth')) {
+		targetToggle.classList.toggle('defaultWidth');
+		targetToggle.classList.toggle('trueSize');
+	}
+	else if (targetToggle.classList.contains('trueSize')) {
+		targetToggle.classList.toggle('trueSize');
+		targetToggle.classList.toggle('fullWidth');
+	}
+	else if (targetToggle.classList.contains('fullWidth')) {
+		targetToggle.classList.toggle('fullWidth');
+		targetToggle.classList.toggle('defaultWidth');
+	}
+}
+</script>
+</body>
+</html>
